@@ -12,7 +12,7 @@ service CameraServerService {
     // Sets the camera information. This must be called as soon as the camera server is created.
     rpc SetInformation(SetInformationRequest) returns(SetInformationResponse) { option (mavsdk.options.async_type) = SYNC; }
 
-    // Set additional camera capabilities
+    // Set additional camera capabilities. Basic ones are determined by the presence of callbacks, but other capability flags can be set from here
     rpc SetAdditionalCapabilities(SetAdditionalCapabilitiesRequest) returns(SetAdditionalCapabilitiesResponse) {option (mavsdk.options.async_type) = SYNC; }
 
     // Sets video streaming settings.
