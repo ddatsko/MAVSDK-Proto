@@ -530,4 +530,5 @@ message TrackRectangle {
     float top_left_corner_y = 2; // Top left corner of rectangle y value (normalized 0..1, 0 is top, 1 is bottom).
     float bottom_right_corner_x = 3; // Bottom right corner of rectangle x value (normalized 0..1, 0 is left, 1 is right).
     float bottom_right_corner_y = 4; // Bottom right corner of rectangle y value (normalized 0..1, 0 is top, 1 is bottom).
+    uint64 timestamp = 5;  // Timestamp of the frame on which the tracking rectagle was selected
 }
