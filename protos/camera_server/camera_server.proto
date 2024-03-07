@@ -417,9 +417,10 @@ message TrackingRectangleCommandResponse {
     TrackRectangle track_rectangle = 1; // The point to track if a point is to be tracked
 }
 
-message SubscribeTrackingOffCommandRequest {}
+message SubscribeTrackingOffCommandRequest {
+}
 message TrackingOffCommandResponse {
-    int32 dummy = 1; // Unused
+    uint64 timestamp = 1; // Timestamp of the frame on which the tracking was set to off
 }
 
 message RespondTrackingPointCommandRequest {
